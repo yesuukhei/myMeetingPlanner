@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="MacBook-Air.local" name="edu.sc.csce747.MeetingPlanner.MeetingTest" skipped="0" tests="26" time="0.063" timestamp="2025-10-15T11:26:10">
+  <properties>
+    <property name="ant.library.dir" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.specification.version" value="25" />
+    <property name="ant.project.name" value="MeetingPlanner" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/Users/yesuukhei/Downloads/MeetingPlanner/build/classes:/Users/yesuukhei/Downloads/MeetingPlanner/build/test-classes:/Users/yesuukhei/Downloads/MeetingPlanner/lib/hamcrest-core-1.3.jar:/Users/yesuukhei/Downloads/MeetingPlanner/lib/junit-4.13.2.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-launcher.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit4.jar" />
+    <property name="java.vm.vendor" value="Homebrew" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="java.vm.specification.version" value="25" />
+    <property name="junit.version" value="4.13.2" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="MN" />
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.sc.csce747.MeetingPlanner.MeetingTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/yesuukhei/Downloads/MeetingPlanner/build/test-reports/TEST-edu.sc.csce747.MeetingPlanner.MeetingTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/yesuukhei/Downloads/MeetingPlanner/junitvmwatcher18223555567886502050.properties propsfile=/Users/yesuukhei/Downloads/MeetingPlanner/junit11473000100166734703.properties" />
+    <property name="test.classes.dir" value="build/test-classes" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="jdk.debug" value="release" />
+    <property name="test.dir" value="src/test/java" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="/Users/yesuukhei" />
+    <property name="user.language" value="en" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.version.date" value="2025-09-16" />
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home" />
+    <property name="basedir" value="/Users/yesuukhei/Downloads/MeetingPlanner" />
+    <property name="file.separator" value="/" />
+    <property name="javadoc.dir" value="build/javadoc" />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="ant.java.version" value="25" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="apple.awt.application.name" value="JUnitTestRunner" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.runtime.version" value="25" />
+    <property name="user.name" value="yesuukhei" />
+    <property name="ant.file" value="/Users/yesuukhei/Downloads/MeetingPlanner/build.xml" />
+    <property name="stdout.encoding" value="UTF-8" />
+    <property name="hamcrest.version" value="1.3" />
+    <property name="path.separator" value=":" />
+    <property name="os.version" value="26.0" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="ant.project.invoked-targets" value="test-detailed" />
+    <property name="ant.file.type.MeetingPlanner" value="file" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="java.vendor.version" value="Homebrew" />
+    <property name="dependencies.present" value="true" />
+    <property name="test.reports.dir" value="build/test-reports" />
+    <property name="build.dir" value="build" />
+    <property name="ant.core.lib" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant.jar" />
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues" />
+    <property name="java.io.tmpdir" value="/var/folders/54/p6n6chn11xd_20j0qgsvkjp00000gp/T/" />
+    <property name="java.version" value="25" />
+    <property name="user.dir" value="/Users/yesuukhei/Downloads/MeetingPlanner" />
+    <property name="os.arch" value="aarch64" />
+    <property name="ant.file.MeetingPlanner" value="/Users/yesuukhei/Downloads/MeetingPlanner/build.xml" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec" />
+    <property name="lib.dir" value="lib" />
+    <property name="native.encoding" value="UTF-8" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.15 compiled on August 25 2024" />
+    <property name="java.library.path" value="/Users/yesuukhei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor" value="Homebrew" />
+    <property name="stderr.encoding" value="UTF-8" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="stdin.encoding" value="UTF-8" />
+    <property name="java.vm.version" value="25" />
+    <property name="classes.dir" value="build/classes" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="java.class.version" value="69.0" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="src.dir" value="src/main/java" />
+    <property name="ant.project.default-target" value="compile" />
+  </properties>
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testToString_nullRoom" time="0.003" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testConstructor_monthDay" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testAddAttendee_duplicate" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testConstructor_full" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testAddAttendee" time="0.001" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetEndTime_tooHigh" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetMonth_boundaryValues" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetStartTime_negative" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetDay_invalidValues" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetDay_boundaryValues" time="0.001" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSettersAndGetters" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testConstructor_monthDayStartEnd" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetEndTime_boundaryValues" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testConstructor_monthDayDescription" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testRemoveAttendee_notInList" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testAddAttendee_nullAttendeesList" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetStartTime_boundaryValues" time="0.001" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testRemoveAttendee_nullAttendeesList" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetEndTime_negative" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testToString_withAllFields" time="0.003" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testToString_emptyAttendees" time="0.001" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetStartTime_tooHigh" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testSetMonth_invalidValues" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testRemoveAttendee" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testToString_nullAttendees" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.MeetingTest" name="testDefaultConstructor" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

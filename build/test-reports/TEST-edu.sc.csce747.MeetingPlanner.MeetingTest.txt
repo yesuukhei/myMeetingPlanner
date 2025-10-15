@@ -1,0 +1,29 @@
+Testsuite: edu.sc.csce747.MeetingPlanner.MeetingTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+
+Testcase: testToString_nullRoom took 0 sec
+Testcase: testConstructor_monthDay took 0.001 sec
+Testcase: testAddAttendee_duplicate took 0 sec
+Testcase: testConstructor_full took 0 sec
+Testcase: testAddAttendee took 0 sec
+Testcase: testSetEndTime_tooHigh took 0.001 sec
+Testcase: testSetMonth_boundaryValues took 0 sec
+Testcase: testSetStartTime_negative took 0 sec
+Testcase: testSetDay_invalidValues took 0 sec
+Testcase: testSetDay_boundaryValues took 0 sec
+Testcase: testSettersAndGetters took 0 sec
+Testcase: testConstructor_monthDayStartEnd took 0 sec
+Testcase: testSetEndTime_boundaryValues took 0 sec
+Testcase: testConstructor_monthDayDescription took 0 sec
+Testcase: testRemoveAttendee_notInList took 0 sec
+Testcase: testAddAttendee_nullAttendeesList took 0.001 sec
+Testcase: testSetStartTime_boundaryValues took 0 sec
+Testcase: testRemoveAttendee_nullAttendeesList took 0 sec
+Testcase: testSetEndTime_negative took 0 sec
+Testcase: testToString_withAllFields took 0.002 sec
+Testcase: testToString_emptyAttendees took 0 sec
+Testcase: testSetStartTime_tooHigh took 0 sec
+Testcase: testSetMonth_invalidValues took 0 sec
+Testcase: testRemoveAttendee took 0 sec
+Testcase: testToString_nullAttendees took 0 sec
+Testcase: testDefaultConstructor took 0.001 sec

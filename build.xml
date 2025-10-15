@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MeetingPlanner" default="compile" basedir=".">
+    
+    <!-- Project properties -->
+    <property name="src.dir" value="src/main/java"/>
+    <property name="test.dir" value="src/test/java"/>
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="test.classes.dir" value="${build.dir}/test-classes"/>
+    <property name="javadoc.dir" value="${build.dir}/javadoc"/>
+    <property name="test.reports.dir" value="${build.dir}/test-reports"/>
+    <property name="lib.dir" value="lib"/>
+    
+    <!-- JUnit properties -->
+    <property name="junit.version" value="4.13.2"/>
+    <property name="hamcrest.version" value="1.3"/>
+    
+    <!-- Classpath definitions -->
+    <path id="compile.classpath">
+        <pathelement location="${classes.dir}"/>
+    </path>
+    
+    <path id="test.classpath">
+        <pathelement location="${classes.dir}"/>
+        <pathelement location="${test.classes.dir}"/>
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    
+    <!-- Download JUnit and Hamcrest if not present -->
+    <target name="download-dependencies" unless="dependencies.present">
+        <mkdir dir="${lib.dir}"/>
+        <get src="https://repo1.maven.org/maven2/junit/junit/${junit.version}/junit-${junit.version}.jar" 
+             dest="${lib.dir}/junit-${junit.version}.jar" skipexisting="true"/>
+        <get src="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/${hamcrest.version}/hamcrest-core-${hamcrest.version}.jar" 
+             dest="${lib.dir}/hamcrest-core-${hamcrest.version}.jar" skipexisting="true"/>
+    </target>
+    
+    <!-- Check if dependencies are present -->
+    <target name="check-dependencies">
+        <condition property="dependencies.present">
+            <and>
+                <available file="${lib.dir}/junit-${junit.version}.jar"/>
+                <available file="${lib.dir}/hamcrest-core-${hamcrest.version}.jar"/>
+            </and>
+        </condition>
+    </target>
+    
+    <!-- Clean build directory -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <echo message="Cleaned build directory"/>
+    </target>
+    
+    <!-- Create build directories -->
+    <target name="init" depends="check-dependencies,download-dependencies">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${test.classes.dir}"/>
+        <mkdir dir="${javadoc.dir}"/>
+        <mkdir dir="${test.reports.dir}"/>
+        <echo message="Created build directories"/>
+    </target>
+    
+    <!-- Compile main source code -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" 
+               destdir="${classes.dir}" 
+               classpathref="compile.classpath"
+               includeantruntime="false"
+               debug="true">
+            <include name="**/*.java"/>
+        </javac>
+        <echo message="Compiled main source code"/>
+    </target>
+    
+    <!-- Compile test source code -->
+    <target name="compile-tests" depends="compile">
+        <javac srcdir="${test.dir}" 
+               destdir="${test.classes.dir}" 
+               classpathref="test.classpath"
+               includeantruntime="false"
+               debug="true">
+            <include name="**/*.java"/>
+        </javac>
+        <echo message="Compiled test source code"/>
+    </target>
+    
+    <!-- Run unit tests -->
+    <target name="test" depends="compile-tests">
+        <junit printsummary="yes" haltonfailure="no" haltonerror="no">
+            <classpath refid="test.classpath"/>
+            <formatter type="xml"/>
+            <formatter type="plain"/>
+            <batchtest todir="${test.reports.dir}">
+                <fileset dir="${test.classes.dir}">
+                    <include name="**/*Test.class"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <echo message="Unit tests completed. Check ${test.reports.dir} for detailed results."/>
+    </target>
+    
+    <!-- Run unit tests with detailed output -->
+    <target name="test-detailed" depends="compile-tests">
+        <junit printsummary="yes" haltonfailure="no" haltonerror="no" fork="true">
+            <classpath refid="test.classpath"/>
+            <formatter type="xml"/>
+            <formatter type="plain" usefile="false"/>
+            <batchtest todir="${test.reports.dir}">
+                <fileset dir="${test.classes.dir}">
+                    <include name="**/*Test.class"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <echo message="Detailed unit tests completed. Check ${test.reports.dir} for detailed results."/>
+    </target>
+    
+    <!-- Generate Javadoc -->
+    <target name="javadoc" depends="compile">
+        <javadoc destdir="${javadoc.dir}" 
+                 author="true" 
+                 version="true" 
+                 use="true" 
+                 windowtitle="MeetingPlanner API Documentation"
+                 doctitle="MeetingPlanner API Documentation"
+                 bottom="Copyright © 2024 MeetingPlanner Project">
+            <fileset dir="${src.dir}">
+                <include name="**/*.java"/>
+            </fileset>
+            <classpath refid="compile.classpath"/>
+            <link href="https://docs.oracle.com/javase/8/docs/api/"/>
+        </javadoc>
+        <echo message="Javadoc generated in ${javadoc.dir}"/>
+    </target>
+    
+    <!-- Run all tests and generate reports -->
+    <target name="test-report" depends="test">
+        <junitreport todir="${test.reports.dir}">
+            <fileset dir="${test.reports.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="${test.reports.dir}" format="frames"/>
+        </junitreport>
+        <echo message="Test report generated in ${test.reports.dir}/index.html"/>
+    </target>
+    
+    <!-- Build everything -->
+    <target name="build" depends="compile,test,javadoc">
+        <echo message="Build completed successfully"/>
+    </target>
+    
+    <!-- Build and run tests -->
+    <target name="build-and-test" depends="compile,test">
+        <echo message="Build and test completed"/>
+    </target>
+    
+    <!-- Package the project -->
+    <target name="jar" depends="compile">
+        <jar destfile="${build.dir}/MeetingPlanner.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="edu.sc.csce747.MeetingPlanner.PlannerInterface"/>
+            </manifest>
+        </jar>
+        <echo message="JAR file created: ${build.dir}/MeetingPlanner.jar"/>
+    </target>
+    
+    <!-- Run the application -->
+    <target name="run" depends="jar">
+        <java jar="${build.dir}/MeetingPlanner.jar" fork="true"/>
+    </target>
+    
+    <!-- Help target -->
+    <target name="help">
+        <echo message="Available targets:"/>
+        <echo message="  clean        - Clean build directory"/>
+        <echo message="  compile      - Compile main source code"/>
+        <echo message="  test         - Run unit tests"/>
+        <echo message="  test-detailed- Run unit tests with detailed output"/>
+        <echo message="  javadoc      - Generate Javadoc documentation"/>
+        <echo message="  test-report  - Generate test report"/>
+        <echo message="  build        - Compile, test, and generate javadoc"/>
+        <echo message="  jar          - Create JAR file"/>
+        <echo message="  run          - Run the application"/>
+        <echo message="  help         - Show this help message"/>
+    </target>
+    
+</project>
