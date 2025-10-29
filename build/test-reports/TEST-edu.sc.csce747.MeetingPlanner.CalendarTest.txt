@@ -1,104 +1,33 @@
 Testsuite: edu.sc.csce747.MeetingPlanner.CalendarTest
-Tests run: 30, Failures: 3, Errors: 6, Skipped: 0, Time elapsed: 0.049 sec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
 
-Testcase: testIsBusy_invalidTime took 0.002 sec
-Testcase: testPrintAgenda_day took 0.003 sec
-	Caused an ERROR
-Cannot invoke "edu.sc.csce747.MeetingPlanner.Room.getID()" because "this.room" is null
-java.lang.NullPointerException: Cannot invoke "edu.sc.csce747.MeetingPlanner.Room.getID()" because "this.room" is null
-	at edu.sc.csce747.MeetingPlanner.Meeting.toString(Meeting.java:103)
-	at edu.sc.csce747.MeetingPlanner.Calendar.printAgenda(Calendar.java:178)
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testPrintAgenda_day(CalendarTest.java:98)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
+Testcase: testIsBusy_invalidTime took 0.003 sec
+Testcase: testPrintAgenda_day took 0.002 sec
 Testcase: testAddMeeting_partialOverlap_end took 0.001 sec
-	Caused an ERROR
-Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_partialOverlap_end(CalendarTest.java:314)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
-Testcase: testAddMeeting_startAfterEnd took 0 sec
-Testcase: testAddMeeting_february30_invalid took 0.001 sec
-	FAILED
-February 30th should be invalid
-junit.framework.AssertionFailedError: February 30th should be invalid
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_february30_invalid(CalendarTest.java:371)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
+Testcase: testAddMeeting_startAfterEnd took 0.001 sec
+Testcase: testAddMeeting_february30_invalid took 0 sec
 Testcase: testAddMeeting_april31_invalid took 0 sec
-	FAILED
-April 31st should be invalid
-junit.framework.AssertionFailedError: April 31st should be invalid
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_april31_invalid(CalendarTest.java:383)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
 Testcase: testAddMeeting_invalidDay_zero took 0 sec
 Testcase: testAddMeeting_startEqualsEnd took 0.001 sec
 Testcase: testIsBusy_invalidParameters took 0 sec
 Testcase: testAddMeeting_invalidStartTime_tooHigh took 0 sec
-Testcase: testIsBusy_invalidDay took 0 sec
+Testcase: testIsBusy_invalidDay took 0.001 sec
 Testcase: testAddMeeting_holiday took 0 sec
 Testcase: testRemoveMeeting took 0 sec
-	FAILED
-Should not be busy after removal
-junit.framework.AssertionFailedError: Should not be busy after removal
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testRemoveMeeting(CalendarTest.java:129)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
 Testcase: testAddMeeting_exactOverlap took 0 sec
-	Caused an ERROR
-Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_exactOverlap(CalendarTest.java:288)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
 Testcase: testAddMeeting_timeConflict took 0 sec
-	Caused an ERROR
-Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_timeConflict(CalendarTest.java:275)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
-Testcase: testAddMeeting_partialOverlap_start took 0.001 sec
-	Caused an ERROR
-Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_partialOverlap_start(CalendarTest.java:301)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
+Testcase: testAddMeeting_partialOverlap_start took 0 sec
 Testcase: testAddMeeting_validMeeting took 0 sec
 Testcase: testAddMeeting_invalidMonth_zero took 0 sec
 Testcase: testClearSchedule took 0 sec
 Testcase: testAddMeeting_invalidMonth_negative took 0 sec
 Testcase: testAddMeeting_february29_leapYear took 0 sec
 Testcase: testAddMeeting_invalidStartTime_negative took 0 sec
-Testcase: testAddMeeting_invalidDay_tooHigh took 0.001 sec
-Testcase: testAddMeeting_invalidEndTime_tooHigh took 0 sec
+Testcase: testAddMeeting_invalidDay_tooHigh took 0 sec
+Testcase: testAddMeeting_invalidEndTime_tooHigh took 0.001 sec
 Testcase: testAddMeeting_invalidDay_negative took 0 sec
 Testcase: testGetMeeting took 0 sec
 Testcase: testAddMeeting_invalidEndTime_negative took 0 sec
-Testcase: testPrintAgenda_month took 0 sec
-	Caused an ERROR
-Cannot invoke "edu.sc.csce747.MeetingPlanner.Room.getID()" because "this.room" is null
-java.lang.NullPointerException: Cannot invoke "edu.sc.csce747.MeetingPlanner.Room.getID()" because "this.room" is null
-	at edu.sc.csce747.MeetingPlanner.Meeting.toString(Meeting.java:103)
-	at edu.sc.csce747.MeetingPlanner.Calendar.printAgenda(Calendar.java:162)
-	at edu.sc.csce747.MeetingPlanner.CalendarTest.testPrintAgenda_month(CalendarTest.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-
-Testcase: testAddMeeting_invalidMonth_tooHigh took 0.001 sec
-Testcase: testIsBusy_noConflict took 0 sec
+Testcase: testPrintAgenda_month took 0.001 sec
+Testcase: testAddMeeting_invalidMonth_tooHigh took 0 sec
+Testcase: testIsBusy_noConflict took 0.001 sec

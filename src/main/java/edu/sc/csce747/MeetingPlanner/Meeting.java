@@ -84,6 +84,9 @@ public class Meeting {
 	 * @param attendee - The person to add.
 	 */
 	public void addAttendee(Person attendee) {
+		if (this.attendees == null) {
+			this.attendees = new ArrayList<Person>();
+		}
 		this.attendees.add(attendee);
 	}
 	
@@ -92,6 +95,9 @@ public class Meeting {
 	 * @param attendee - The person to remove.
 	 */
 	public void removeAttendee(Person attendee) {
+		if (this.attendees == null) {
+			return;
+		}
 		this.attendees.remove(attendee);
 	}
 	
@@ -100,15 +106,28 @@ public class Meeting {
 	 * @return String - Information about the meeting.
 	 */
 	public String toString(){
-		String info=month+"/"+day+", "+start+" - "+end+","+room.getID()+": "+description+"\nAttending: ";
+		String safeDescription = (description == null) ? "" : description;
+		String roomId = (room == null) ? "NoRoom" : room.getID();
+		StringBuilder infoBuilder = new StringBuilder();
+		infoBuilder.append(month).append("/").append(day)
+			.append(", ").append(start).append(" - ").append(end)
+			.append(",").append(roomId).append(": ").append(safeDescription)
+			.append("\nAttending: ");
 		
-		for(Person attendee : attendees){
-			info=info+attendee.getName()+",";
+		if (attendees == null || attendees.isEmpty()) {
+			infoBuilder.append("none");
+		} else {
+			for (int i = 0; i < attendees.size(); i++) {
+				Person attendee = attendees.get(i);
+				String name = (attendee == null) ? "" : attendee.getName();
+				infoBuilder.append(name);
+				if (i < attendees.size() - 1) {
+					infoBuilder.append(",");
+				}
+			}
 		}
 		
-		info=info.substring(0,info.length()-1);
-		
-		return info;
+		return infoBuilder.toString();
 	}
 	
 	/**

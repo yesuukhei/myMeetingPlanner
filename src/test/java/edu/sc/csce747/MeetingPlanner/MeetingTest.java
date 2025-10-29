@@ -156,47 +156,36 @@ public class MeetingTest {
 	
 	@Test
 	public void testAddAttendee_nullAttendeesList() {
-		// This will cause NullPointerException - testing the bug
-		try {
-			meeting.addAttendee(person1);
-			fail("Should throw NullPointerException when attendees list is null");
-		} catch(NullPointerException e) {
-			assertTrue("Should throw NullPointerException", true);
-		}
+		// Should not throw; implementation initializes attendees lazily
+		meeting.addAttendee(person1);
+		assertNotNull("Attendees list should be initialized", meeting.getAttendees());
+		assertEquals("Should have 1 attendee", 1, meeting.getAttendees().size());
 	}
 	
 	@Test
 	public void testRemoveAttendee_nullAttendeesList() {
-		// This will cause NullPointerException - testing the bug
-		try {
-			meeting.removeAttendee(person1);
-			fail("Should throw NullPointerException when attendees list is null");
-		} catch(NullPointerException e) {
-			assertTrue("Should throw NullPointerException", true);
-		}
+		// Should be a no-op and not throw
+		meeting.removeAttendee(person1);
+		assertNull("Attendees list remains null after no-op remove", meeting.getAttendees());
 	}
 	
 	@Test
 	public void testToString_nullRoom() {
-		// This will cause NullPointerException - testing the bug
+		// Should not throw; prints placeholder for room
 		meeting.setMonth(3);
 		meeting.setDay(15);
 		meeting.setStartTime(9);
 		meeting.setEndTime(11);
 		meeting.setDescription("Test Meeting");
 		// room is null by default
-		
-		try {
-			String result = meeting.toString();
-			fail("Should throw NullPointerException when room is null");
-		} catch(NullPointerException e) {
-			assertTrue("Should throw NullPointerException", true);
-		}
+		String result = meeting.toString();
+		assertNotNull(result);
+		assertTrue("Should include placeholder when room is null", result.contains("NoRoom"));
 	}
 	
 	@Test
 	public void testToString_nullAttendees() {
-		// This will cause NullPointerException - testing the bug
+		// Should not throw; prints 'none' for attendees
 		meeting.setMonth(3);
 		meeting.setDay(15);
 		meeting.setStartTime(9);
@@ -204,13 +193,9 @@ public class MeetingTest {
 		meeting.setDescription("Test Meeting");
 		meeting.setRoom(room);
 		// attendees is null by default
-		
-		try {
-			String result = meeting.toString();
-			fail("Should throw NullPointerException when attendees is null");
-		} catch(NullPointerException e) {
-			assertTrue("Should throw NullPointerException", true);
-		}
+		String result = meeting.toString();
+		assertNotNull(result);
+		assertTrue("Should indicate none when attendees is null", result.contains("Attending: none"));
 	}
 	
 	@Test

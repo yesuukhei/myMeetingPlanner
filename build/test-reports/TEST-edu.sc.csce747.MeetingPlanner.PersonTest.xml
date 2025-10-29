@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="7" failures="0" hostname="MacBook-Air-3.local" name="edu.sc.csce747.MeetingPlanner.PersonTest" skipped="0" tests="22" time="0.004" timestamp="2025-10-29T14:53:40">
+<testsuite errors="0" failures="0" hostname="MacBook-Air-3.local" name="edu.sc.csce747.MeetingPlanner.PersonTest" skipped="0" tests="22" time="0.066" timestamp="2025-10-29T15:25:22">
   <properties>
     <property name="ant.library.dir" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib" />
     <property name="ant.file.type" value="file" />
     <property name="java.specification.version" value="25" />
     <property name="ant.project.name" value="MeetingPlanner" />
     <property name="sun.jnu.encoding" value="UTF-8" />
-    <property name="java.class.path" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-launcher.jar:/opt/homebrew/share/ant:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-commons-net.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-xz.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit4.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jai.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-resolver.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jdepend.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-regexp.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-log4j.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-javamail.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-bcel.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-netrexx.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-swing.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jsch.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junitlauncher.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jakartamail.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ivy-2.5.3.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-imageio.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-launcher.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-antlr.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-testutil.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-oro.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/bcel-6.10.0.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jmf.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-xalan2.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-bsf.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-commons-logging.jar" />
+    <property name="java.class.path" value="/Users/yesuukhei/Downloads/MeetingPlanner/build/classes:/Users/yesuukhei/Downloads/MeetingPlanner/build/test-classes:/Users/yesuukhei/Downloads/MeetingPlanner/lib/hamcrest-core-1.3.jar:/Users/yesuukhei/Downloads/MeetingPlanner/lib/junit-4.13.2.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-launcher.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit4.jar" />
     <property name="java.vm.vendor" value="Homebrew" />
     <property name="sun.arch.data.model" value="64" />
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues" />
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="user.country" value="MN" />
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib" />
-    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  -lib /opt/homebrew/share/ant test" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.sc.csce747.MeetingPlanner.PersonTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/yesuukhei/Downloads/MeetingPlanner/build/test-reports/TEST-edu.sc.csce747.MeetingPlanner.PersonTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/Users/yesuukhei/Downloads/MeetingPlanner/build/test-reports/TEST-edu.sc.csce747.MeetingPlanner.PersonTest.txt crashfile=/Users/yesuukhei/Downloads/MeetingPlanner/junitvmwatcher14675570941052194746.properties propsfile=/Users/yesuukhei/Downloads/MeetingPlanner/junit13341365165440853310.properties" />
     <property name="test.classes.dir" value="build/test-classes" />
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="jdk.debug" value="release" />
@@ -28,14 +28,14 @@
     <property name="java.version.date" value="2025-09-16" />
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home" />
     <property name="basedir" value="/Users/yesuukhei/Downloads/MeetingPlanner" />
-    <property name="javadoc.dir" value="build/javadoc" />
     <property name="file.separator" value="/" />
+    <property name="javadoc.dir" value="build/javadoc" />
     <property name="java.vm.compressedOopsMode" value="Zero based" />
     <property name="line.separator" value="&#xa;" />
     <property name="ant.java.version" value="25" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-    <property name="apple.awt.application.name" value="Launcher" />
+    <property name="apple.awt.application.name" value="JUnitTestRunner" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="java.runtime.version" value="25" />
@@ -46,10 +46,10 @@
     <property name="path.separator" value=":" />
     <property name="os.version" value="26.0" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="ant.project.invoked-targets" value="test" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="ant.project.invoked-targets" value="test-report" />
     <property name="ant.file.type.MeetingPlanner" value="file" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
     <property name="java.vendor.version" value="Homebrew" />
     <property name="dependencies.present" value="true" />
     <property name="test.reports.dir" value="build/test-reports" />
@@ -60,102 +60,45 @@
     <property name="java.version" value="25" />
     <property name="user.dir" value="/Users/yesuukhei/Downloads/MeetingPlanner" />
     <property name="os.arch" value="aarch64" />
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.MeetingPlanner" value="/Users/yesuukhei/Downloads/MeetingPlanner/build.xml" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.home" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec" />
     <property name="lib.dir" value="lib" />
     <property name="native.encoding" value="UTF-8" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.15 compiled on August 25 2024" />
     <property name="java.library.path" value="/Users/yesuukhei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
     <property name="java.vendor" value="Homebrew" />
-    <property name="java.vm.info" value="mixed mode, sharing" />
     <property name="stderr.encoding" value="UTF-8" />
-    <property name="java.vm.version" value="25" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
     <property name="stdin.encoding" value="UTF-8" />
+    <property name="java.vm.version" value="25" />
     <property name="classes.dir" value="build/classes" />
     <property name="sun.io.unicode.encoding" value="UnicodeBig" />
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="java.class.version" value="69.0" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="src.dir" value="src/main/java" />
     <property name="ant.project.default-target" value="compile" />
   </properties>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testIsBusy_invalidTime" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testPrintAgenda_day" time="0.0">
-    <error message="Cannot invoke &quot;edu.sc.csce747.MeetingPlanner.Room.getID()&quot; because &quot;this.room&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;edu.sc.csce747.MeetingPlanner.Room.getID()&quot; because &quot;this.room&quot; is null
-	at edu.sc.csce747.MeetingPlanner.Meeting.toString(Meeting.java:103)
-	at edu.sc.csce747.MeetingPlanner.Calendar.printAgenda(Calendar.java:178)
-	at edu.sc.csce747.MeetingPlanner.Person.printAgenda(Person.java:52)
-	at edu.sc.csce747.MeetingPlanner.PersonTest.testPrintAgenda_day(PersonTest.java:102)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-</error>
-  </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_boundaryTimes" time="0.0">
-    <error message="Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.Person.addMeeting(Person.java:33)
-	at edu.sc.csce747.MeetingPlanner.PersonTest.testAddMeeting_boundaryTimes(PersonTest.java:226)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-</error>
-  </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_multipleMeetings" time="0.0">
-    <error message="Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.Person.addMeeting(Person.java:33)
-	at edu.sc.csce747.MeetingPlanner.PersonTest.testAddMeeting_multipleMeetings(PersonTest.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-</error>
-  </testcase>
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testIsBusy_invalidTime" time="0.003" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testPrintAgenda_day" time="0.002" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_boundaryTimes" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_multipleMeetings" time="0.001" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testIsBusy_invalidParameters" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testIsBusy_invalidDay" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testRemoveMeeting" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_exactOverlap" time="0.0">
-    <error message="Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.Person.addMeeting(Person.java:33)
-	at edu.sc.csce747.MeetingPlanner.PersonTest.testAddMeeting_exactOverlap(PersonTest.java:159)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-</error>
-  </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_timeConflict" time="0.0">
-    <error message="Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.Person.addMeeting(Person.java:33)
-	at edu.sc.csce747.MeetingPlanner.PersonTest.testAddMeeting_timeConflict(PersonTest.java:146)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-</error>
-  </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_consecutiveMeetings" time="0.0">
-    <error message="Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.Person.addMeeting(Person.java:33)
-	at edu.sc.csce747.MeetingPlanner.PersonTest.testAddMeeting_consecutiveMeetings(PersonTest.java:241)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-</error>
-  </testcase>
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_exactOverlap" time="0.002" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_timeConflict" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_consecutiveMeetings" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_nullMeeting" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_valid" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testGetMeeting_invalidIndex" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testGetMeeting_invalidIndex" time="0.001" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testGetMeeting" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_invalidDate" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_invalidTime" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testAddMeeting_sameTimeDifferentDays" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testConstructor_withName" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testPrintAgenda_month" time="0.001">
-    <error message="Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null
-	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
-	at edu.sc.csce747.MeetingPlanner.Person.addMeeting(Person.java:33)
-	at edu.sc.csce747.MeetingPlanner.PersonTest.testPrintAgenda_month(PersonTest.java:87)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-</error>
-  </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testIsBusy_noConflict" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testConstructor_withName" time="0.001" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testPrintAgenda_month" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testIsBusy_noConflict" time="0.001" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testDefaultConstructor" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.PersonTest" name="testRemoveMeeting_invalidIndex" time="0.0" />
   <system-out><![CDATA[]]></system-out>

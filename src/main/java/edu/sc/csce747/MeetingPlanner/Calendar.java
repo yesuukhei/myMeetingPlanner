@@ -39,7 +39,6 @@ public class Calendar {
 		occupied.get(4).get(31).add(new Meeting(4,31,"Day does not exist"));
 		occupied.get(6).get(31).add(new Meeting(6,31,"Day does not exist"));
 		occupied.get(9).get(31).add(new Meeting(9,31,"Day does not exist"));
-		occupied.get(11).get(30).add(new Meeting(11,31,"Day does not exist"));
 		occupied.get(11).get(31).add(new Meeting(11,31,"Day does not exist"));
 	}
 	
@@ -59,10 +58,15 @@ public class Calendar {
 		checkTimes(month,day,start,end);
 		
 		for(Meeting toCheck : occupied.get(month).get(day)){
-			if(start >= toCheck.getStartTime() && start <= toCheck.getEndTime()){
-				busy=true;
-			}else if(end >= toCheck.getStartTime() && end <= toCheck.getEndTime()){
-				busy=true;
+			String desc = toCheck.getDescription();
+			if ("Day does not exist".equals(desc)) {
+				return true; // invalid day is considered busy/unavailable
+			}
+			int otherStart = toCheck.getStartTime();
+			int otherEnd = toCheck.getEndTime();
+			if (start < otherEnd && end > otherStart) {
+				busy = true;
+				break;
 			}
 		}
 		return busy;
@@ -77,13 +81,25 @@ public class Calendar {
 	 * @throws TimeConflictException - If an invalid date or time is entered.
 	 */
 	public static void checkTimes(int mMonth,int mDay,int mStart, int mEnd) throws TimeConflictException{
-		// Check for illegal dates
-		if(mDay< 1 || mDay > 31){
-			throw new TimeConflictException("Day does not exist.");
+		// Check for illegal month
+		if(mMonth < 1 || mMonth > 12){
+			throw new TimeConflictException("Month does not exist.");
 		}
 
-		if(mMonth < 1 || mMonth >= 12){
-			throw new TimeConflictException("Month does not exist.");
+		// Check for illegal day based on month (allow Feb 29)
+		int maxDayForMonth;
+		switch (mMonth) {
+			case 2:
+				maxDayForMonth = 29;
+				break;
+			case 4: case 6: case 9: case 11:
+				maxDayForMonth = 30;
+				break;
+			default:
+				maxDayForMonth = 31;
+		}
+		if(mDay < 1 || mDay > maxDayForMonth){
+			throw new TimeConflictException("Day does not exist.");
 		}
 
 		// Check for illegal times
@@ -120,16 +136,21 @@ public class Calendar {
 		Meeting conflict = new Meeting();
 		
 		for(Meeting toCheck : thatDay){
-			if(!toCheck.getDescription().equals("Day does not exist")){
-				// Does the start time fall between this meeting's start and end times?
-				if(mStart >= toCheck.getStartTime() && mStart <= toCheck.getEndTime()){
-					booked = true;
-					conflict = toCheck;
-					// Does the end time fall between this meeting's start and end times?
-				}else if(mEnd >= toCheck.getStartTime() && mEnd <= toCheck.getEndTime()){
-					booked = true;
-					conflict = toCheck;
-				}
+			String desc = toCheck.getDescription();
+			boolean isInvalidDayMarker = "Day does not exist".equals(desc);
+			if(isInvalidDayMarker){
+				// Any attempt to schedule on an invalid day is a conflict
+				booked = true;
+				conflict = toCheck;
+				break;
+			}
+			int otherStart = toCheck.getStartTime();
+			int otherEnd = toCheck.getEndTime();
+			// Overlap if time ranges intersect: (start < otherEnd) && (end > otherStart)
+			if (mStart < otherEnd && mEnd > otherStart) {
+				booked = true;
+				conflict = toCheck;
+				break;
 			}
 		}
 		

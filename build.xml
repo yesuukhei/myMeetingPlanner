@@ -89,7 +89,7 @@
     
     <!-- Run unit tests -->
     <target name="test" depends="compile-tests">
-        <junit printsummary="yes" haltonfailure="no" haltonerror="no">
+        <junit printsummary="yes" haltonfailure="no" haltonerror="no" fork="true">
             <classpath refid="test.classpath"/>
             <formatter type="xml"/>
             <formatter type="plain"/>
