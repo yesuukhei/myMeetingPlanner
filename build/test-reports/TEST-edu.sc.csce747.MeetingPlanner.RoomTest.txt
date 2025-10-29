@@ -2,7 +2,7 @@ Testsuite: edu.sc.csce747.MeetingPlanner.RoomTest
 Tests run: 21, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.005 sec
 
 Testcase: testIsBusy_invalidTime took 0 sec
-Testcase: testPrintAgenda_day took 0.001 sec
+Testcase: testPrintAgenda_day took 0 sec
 	Caused an ERROR
 Cannot invoke "edu.sc.csce747.MeetingPlanner.Room.getID()" because "this.room" is null
 java.lang.NullPointerException: Cannot invoke "edu.sc.csce747.MeetingPlanner.Room.getID()" because "this.room" is null
@@ -35,9 +35,9 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 
 Testcase: testIsBusy_invalidParameters took 0 sec
 Testcase: testRoomID_setter took 0 sec
-Testcase: testIsBusy_invalidDay took 0.001 sec
+Testcase: testIsBusy_invalidDay took 0 sec
 Testcase: testRemoveMeeting took 0 sec
-Testcase: testAddMeeting_exactOverlap took 0 sec
+Testcase: testAddMeeting_exactOverlap took 0.001 sec
 	Caused an ERROR
 Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
 java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
@@ -57,7 +57,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 
-Testcase: testAddMeeting_consecutiveMeetings took 0.001 sec
+Testcase: testAddMeeting_consecutiveMeetings took 0 sec
 	Caused an ERROR
 Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
 java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
@@ -69,12 +69,12 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 
 Testcase: testAddMeeting_nullMeeting took 0 sec
 Testcase: testAddMeeting_valid took 0 sec
-Testcase: testConstructor_withID took 0 sec
+Testcase: testConstructor_withID took 0.001 sec
 Testcase: testGetMeeting took 0 sec
 Testcase: testAddMeeting_invalidDate took 0 sec
 Testcase: testAddMeeting_invalidTime took 0 sec
 Testcase: testAddMeeting_sameTimeDifferentDays took 0 sec
-Testcase: testPrintAgenda_month took 0 sec
+Testcase: testPrintAgenda_month took 0.001 sec
 	Caused an ERROR
 Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null
 java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "edu.sc.csce747.MeetingPlanner.Meeting.getDescription()" is null

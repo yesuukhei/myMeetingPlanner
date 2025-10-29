@@ -1,27 +1,27 @@
 Testsuite: edu.sc.csce747.MeetingPlanner.OrganizationTest
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 
-Testcase: testGetRoom_specialCharacters took 0.001 sec
+Testcase: testGetRoom_specialCharacters took 0 sec
 Testcase: testGetRooms took 0 sec
-Testcase: testRoomsListIntegrity took 0 sec
+Testcase: testRoomsListIntegrity took 0.001 sec
 Testcase: testGetEmployees took 0 sec
 Testcase: testEmployeesListIntegrity took 0 sec
 Testcase: testGetRoom_null took 0 sec
 Testcase: testGetEmployee_specialCharacters took 0 sec
 Testcase: testGetEmployee_null took 0 sec
 Testcase: testGetEmployee_nonexistent took 0 sec
-Testcase: testGetRoom_nonexistent took 0 sec
+Testcase: testGetRoom_nonexistent took 0.001 sec
 Testcase: testGetEmployee_existing took 0 sec
-Testcase: testGetRoom_existing took 0.001 sec
+Testcase: testGetRoom_existing took 0 sec
 Testcase: testGetEmployee_numbersOnly took 0 sec
 Testcase: testGetRoom_numbersOnly took 0 sec
-Testcase: testGetEmployee_existingCsilla took 0 sec
+Testcase: testGetEmployee_existingCsilla took 0.001 sec
 Testcase: testGetEmployee_existingManton took 0 sec
 Testcase: testGetEmployee_emptyString took 0 sec
 Testcase: testGetRoom_emptyString took 0 sec
-Testcase: testGetEmployee_partialMatch took 0.001 sec
+Testcase: testGetEmployee_partialMatch took 0 sec
 Testcase: testGetEmployee_extraSpaces took 0 sec
-Testcase: testGetEmployee_caseSensitive took 0 sec
+Testcase: testGetEmployee_caseSensitive took 0.001 sec
 Testcase: testGetRoom_partialMatch took 0 sec
 Testcase: testDefaultConstructor took 0 sec
 Testcase: testGetRoom_existing2A02 took 0 sec

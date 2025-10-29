@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="6" failures="3" hostname="MacBook-Air.local" name="edu.sc.csce747.MeetingPlanner.CalendarTest" skipped="0" tests="30" time="0.073" timestamp="2025-10-15T11:26:10">
+<testsuite errors="6" failures="3" hostname="MacBook-Air-3.local" name="edu.sc.csce747.MeetingPlanner.CalendarTest" skipped="0" tests="30" time="0.049" timestamp="2025-10-29T14:53:40">
   <properties>
     <property name="ant.library.dir" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib" />
     <property name="ant.file.type" value="file" />
     <property name="java.specification.version" value="25" />
     <property name="ant.project.name" value="MeetingPlanner" />
     <property name="sun.jnu.encoding" value="UTF-8" />
-    <property name="java.class.path" value="/Users/yesuukhei/Downloads/MeetingPlanner/build/classes:/Users/yesuukhei/Downloads/MeetingPlanner/build/test-classes:/Users/yesuukhei/Downloads/MeetingPlanner/lib/hamcrest-core-1.3.jar:/Users/yesuukhei/Downloads/MeetingPlanner/lib/junit-4.13.2.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-launcher.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit4.jar" />
+    <property name="java.class.path" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-launcher.jar:/opt/homebrew/share/ant:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-commons-net.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-xz.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit4.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jai.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-resolver.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jdepend.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-regexp.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-log4j.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-javamail.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-bcel.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-netrexx.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-swing.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jsch.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junitlauncher.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jakartamail.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ivy-2.5.3.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-junit.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-imageio.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-launcher.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-antlr.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-testutil.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-oro.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/bcel-6.10.0.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-jmf.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-xalan2.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-apache-bsf.jar:/opt/homebrew/Cellar/ant/1.10.15_1/libexec/lib/ant-commons-logging.jar" />
     <property name="java.vm.vendor" value="Homebrew" />
     <property name="sun.arch.data.model" value="64" />
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues" />
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="user.country" value="MN" />
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.sc.csce747.MeetingPlanner.CalendarTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/yesuukhei/Downloads/MeetingPlanner/build/test-reports/TEST-edu.sc.csce747.MeetingPlanner.CalendarTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/yesuukhei/Downloads/MeetingPlanner/junitvmwatcher2395108821186917467.properties propsfile=/Users/yesuukhei/Downloads/MeetingPlanner/junit10476926080793638716.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  -lib /opt/homebrew/share/ant test" />
     <property name="test.classes.dir" value="build/test-classes" />
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="jdk.debug" value="release" />
@@ -28,14 +28,14 @@
     <property name="java.version.date" value="2025-09-16" />
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home" />
     <property name="basedir" value="/Users/yesuukhei/Downloads/MeetingPlanner" />
-    <property name="file.separator" value="/" />
     <property name="javadoc.dir" value="build/javadoc" />
+    <property name="file.separator" value="/" />
     <property name="java.vm.compressedOopsMode" value="Zero based" />
     <property name="line.separator" value="&#xa;" />
     <property name="ant.java.version" value="25" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-    <property name="apple.awt.application.name" value="JUnitTestRunner" />
+    <property name="apple.awt.application.name" value="Launcher" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="java.runtime.version" value="25" />
@@ -46,10 +46,10 @@
     <property name="path.separator" value=":" />
     <property name="os.version" value="26.0" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.project.invoked-targets" value="test" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="ant.project.invoked-targets" value="test-detailed" />
-    <property name="ant.file.type.MeetingPlanner" value="file" />
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="ant.file.type.MeetingPlanner" value="file" />
     <property name="java.vendor.version" value="Homebrew" />
     <property name="dependencies.present" value="true" />
     <property name="test.reports.dir" value="build/test-reports" />
@@ -60,31 +60,32 @@
     <property name="java.version" value="25" />
     <property name="user.dir" value="/Users/yesuukhei/Downloads/MeetingPlanner" />
     <property name="os.arch" value="aarch64" />
-    <property name="ant.file.MeetingPlanner" value="/Users/yesuukhei/Downloads/MeetingPlanner/build.xml" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.MeetingPlanner" value="/Users/yesuukhei/Downloads/MeetingPlanner/build.xml" />
     <property name="ant.home" value="/opt/homebrew/Cellar/ant/1.10.15_1/libexec" />
     <property name="lib.dir" value="lib" />
     <property name="native.encoding" value="UTF-8" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.15 compiled on August 25 2024" />
     <property name="java.library.path" value="/Users/yesuukhei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
     <property name="java.vendor" value="Homebrew" />
-    <property name="stderr.encoding" value="UTF-8" />
     <property name="java.vm.info" value="mixed mode, sharing" />
-    <property name="stdin.encoding" value="UTF-8" />
+    <property name="stderr.encoding" value="UTF-8" />
     <property name="java.vm.version" value="25" />
+    <property name="stdin.encoding" value="UTF-8" />
     <property name="classes.dir" value="build/classes" />
     <property name="sun.io.unicode.encoding" value="UnicodeBig" />
-    <property name="java.class.version" value="69.0" />
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.class.version" value="69.0" />
     <property name="src.dir" value="src/main/java" />
     <property name="ant.project.default-target" value="compile" />
   </properties>
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testIsBusy_invalidTime" time="0.002" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testPrintAgenda_day" time="0.005">
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testPrintAgenda_day" time="0.003">
     <error message="Cannot invoke &quot;edu.sc.csce747.MeetingPlanner.Room.getID()&quot; because &quot;this.room&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;edu.sc.csce747.MeetingPlanner.Room.getID()&quot; because &quot;this.room&quot; is null
 	at edu.sc.csce747.MeetingPlanner.Meeting.toString(Meeting.java:103)
 	at edu.sc.csce747.MeetingPlanner.Calendar.printAgenda(Calendar.java:178)
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testPrintAgenda_day(CalendarTest.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </error>
   </testcase>
@@ -93,6 +94,7 @@
 	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_partialOverlap_end(CalendarTest.java:314)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </error>
   </testcase>
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_startAfterEnd" time="0.0" />
@@ -100,11 +102,13 @@
     <failure message="February 30th should be invalid" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: February 30th should be invalid
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_february30_invalid(CalendarTest.java:371)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </failure>
   </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_april31_invalid" time="0.001">
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_april31_invalid" time="0.0">
     <failure message="April 31st should be invalid" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: April 31st should be invalid
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_april31_invalid(CalendarTest.java:383)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </failure>
   </testcase>
@@ -113,17 +117,19 @@
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testIsBusy_invalidParameters" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidStartTime_tooHigh" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testIsBusy_invalidDay" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_holiday" time="0.001" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testRemoveMeeting" time="0.0">
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_holiday" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testRemoveMeeting" time="0.001">
     <failure message="Should not be busy after removal" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Should not be busy after removal
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testRemoveMeeting(CalendarTest.java:129)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </failure>
   </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_exactOverlap" time="0.001">
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_exactOverlap" time="0.0">
     <error message="Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because the return value of &quot;edu.sc.csce747.MeetingPlanner.Meeting.getDescription()&quot; is null
 	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_exactOverlap(CalendarTest.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </error>
   </testcase>
@@ -132,6 +138,7 @@
 	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_timeConflict(CalendarTest.java:275)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </error>
   </testcase>
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_partialOverlap_start" time="0.001">
@@ -139,11 +146,12 @@
 	at edu.sc.csce747.MeetingPlanner.Calendar.addMeeting(Calendar.java:123)
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testAddMeeting_partialOverlap_start(CalendarTest.java:301)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </error>
   </testcase>
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_validMeeting" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidMonth_zero" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testClearSchedule" time="0.001" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testClearSchedule" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidMonth_negative" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_february29_leapYear" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidStartTime_negative" time="0.0" />
@@ -152,15 +160,16 @@
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidDay_negative" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testGetMeeting" time="0.0" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidEndTime_negative" time="0.0" />
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testPrintAgenda_month" time="0.001">
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testPrintAgenda_month" time="0.0">
     <error message="Cannot invoke &quot;edu.sc.csce747.MeetingPlanner.Room.getID()&quot; because &quot;this.room&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;edu.sc.csce747.MeetingPlanner.Room.getID()&quot; because &quot;this.room&quot; is null
 	at edu.sc.csce747.MeetingPlanner.Meeting.toString(Meeting.java:103)
 	at edu.sc.csce747.MeetingPlanner.Calendar.printAgenda(Calendar.java:162)
 	at edu.sc.csce747.MeetingPlanner.CalendarTest.testPrintAgenda_month(CalendarTest.java:84)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 </error>
   </testcase>
-  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidMonth_tooHigh" time="0.0" />
+  <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testAddMeeting_invalidMonth_tooHigh" time="0.001" />
   <testcase classname="edu.sc.csce747.MeetingPlanner.CalendarTest" name="testIsBusy_noConflict" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
